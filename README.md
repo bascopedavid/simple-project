@@ -1,33 +1,20 @@
-# Getting Started
+# Project Title
 
-To get started, follow these steps:
+One Paragraph of project description goes here.
 
-1. Clone this repository to your local machine:
-   ```
-   git clone https://github.com/yourusername/your-repo.git
-   ```
-2. Change into the cloned directory:
-   ```
-   cd your-repo
-   ```
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
+## Getting Started
 
-## Existing Endpoints
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-The following endpoints are available based on api/openapi.json:
+### Prerequisites
 
-- GET /users - Retrieve a list of users
-- POST /users - Create a new user
-- PUT /users/{id} - Update an existing user
-- DELETE /users/{id} - Delete a user
+What things you need to install the software and how to install them
 
-## License
+- Give examples
 
-This project is licensed under the MIT License.
+### Installing
+
+A step by step series of examples that tell you have to get a development env running
+
+Say what the step will be
+

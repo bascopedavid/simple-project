@@ -1,18 +1,6 @@
-import { extendZodWithOpenApi, OpenApiGeneratorV3, OpenAPIRegistry } from "@asteasolutions/zod-to-openapi";
-import { OpenAPIObjectConfig } from "@asteasolutions/zod-to-openapi/dist/v3.0/openapi-generator";
-import fs from "node:fs";
-import path from "node:path";
-import { z } from "zod";
-import { registerHelloWorldEndpoint } from "./endpoint-contracts/registerHelloWorldEndpoint";
+import { OpenAPIRegistry } from '@asteasolutions/zod-to-openapi';
+import { registerHelloWorldEndpoint } from './endpoint-contracts/registerHelloWorldEndpoint';
 
-extendZodWithOpenApi(z);
-
-/**
- * This script generate OpenAPI document under /api/openapi.json, which can be rendered in Gitlab directly
- *
- * Usage:
- *   npx tsx generate-openapi-doc.ts
- */
 const main = () => {
   const registry = new OpenAPIRegistry();
   registry.registerComponent("securitySchemes", "bearerAuth", {
@@ -25,7 +13,7 @@ const main = () => {
   const generator = new OpenApiGeneratorV3(registry.definitions);
   const generatedDocument = generator.generateDocument(getOpenApiConfig());
 
-  fs.writeFileSync(path.join(__dirname, "../api/openapi.json"), JSON.stringify(generatedDocument, null, 2));
+  fs.writeFileSync(path.join(__dirname, '../api/openapi.json'), JSON.stringify(generatedDocument, null, 2));
 };
 
 const getOpenApiConfig = (): OpenAPIObjectConfig => {

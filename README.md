@@ -1,25 +1,33 @@
-# Welcome to Simple Project!
+# Getting Started
 
-This is a simple project that uses OpenAPI and TypeScript.
+To get started, follow these steps:
 
-## Getting Started
+1. Clone this repository to your local machine:
+   ```
+   git clone https://github.com/yourusername/your-repo.git
+   ```
+2. Change into the cloned directory:
+   ```
+   cd your-repo
+   ```
+3. Install dependencies:
+   ```
+   npm install
+   ```
+4. Start the development server:
+   ```
+   npm run dev
+   ```
 
-To get started with this project, follow these steps:
+## Existing Endpoints
 
-1. Install the dependencies by running `npm install` or `yarn install`.
-2. Start the server by running `npm run offline:server:start` or `yarn offline:server:start`.
-3. Use a tool like Postman to send requests to the API.
+The following endpoints are available based on api/openapi.json:
 
-## OpenAPI Documentation
-
-The OpenAPI documentation for this project can be found in [api/openapi.json](api/openapi.json).
+- GET /users - Retrieve a list of users
+- POST /users - Create a new user
+- PUT /users/{id} - Update an existing user
+- DELETE /users/{id} - Delete a user
 
 ## License
 
 This project is licensed under the MIT License.
-
----
-
-# Changelog
-
-* 2023-02-20: Initial release

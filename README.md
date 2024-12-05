@@ -1,20 +1,28 @@
-# Project Title
+# Simple Project
 
-One Paragraph of project description goes here.
+This project is a simple example of how to use various technologies and tools.
 
-## Getting Started
+## Technologies Used
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+* Node.js
+* TypeScript
+* Jest
+* Eslint
+* Prettier
+* Serverless Framework
+* MongoDB
+* Docker
 
-### Prerequisites
+## How to Run the Project
 
-What things you need to install the software and how to install them
+1. Install dependencies by running `npm install`
+2. Start the server by running `npm run offline:server:start`
+3. Start the MongoDB container by running `npm run offline:mongodb:start`
+4. Initialize the database by running `npm run offline:db:init`
+5. Stop the server and MongoDB container by running `npm run offline:stop`
 
-- Give examples
+## How to Test the Project
 
-### Installing
+1. Run tests by running `npm test`
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
+This project is licensed under the MIT License.

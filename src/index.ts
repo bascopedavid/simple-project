@@ -1,0 +1,3 @@
+// entire file content ...
+console.log('Hey there! Welcome to our app!');
+// ... goes in between
